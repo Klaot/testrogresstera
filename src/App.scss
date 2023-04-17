@@ -1,0 +1,95 @@
+#root {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+@keyframes example {
+  from {transform: scale(1.2)
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.header {
+  .header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-inline: 25px;
+  .header_logo_p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    }
+    img {
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+    }
+    img:hover {
+      opacity: 0.7;
+    }
+  }
+} 
+
+.info_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .info_general {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 335px;
+    padding-inline: 35px;
+    padding-block: 17px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 1;
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+    }
+    button:hover {
+      opacity: 0.6;
+    }
+    .info_general_bonus-info {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .info_general_burning-info {
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #979797;
+        }
+        img {
+          margin-inline: 10px;
+          animation: example 1s linear 2s infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: -70px;
+  position: relative;
+  z-index: 0;
+  height: 148px;
+  background: linear-gradient(180deg, #D2333E 0%, #F54B55 100%);
+}
+
